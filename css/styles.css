@@ -1,0 +1,173 @@
+/* FOR IMPORTING FONTS */
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+/* UNIVERSALS */
+
+/* NAVBAR SECTION */
+.navbar-default {
+  background-color: transparent;  /* Makes Menu Bar Transparent */
+  border: none;                   /* Removes Border From Menu Bar */
+  font-family: 'Bad Script', cursive;
+  font-size: 15pt;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #335752;                      /* Makes Menu Text #335752 */
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #fff;                            /* Keeps Menu Text White When Hovered Over */
+  background-color: rgba(0, 55, 25, .3);  /* For Transparent Gray Over Text When Hovered */
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .4);  /* For 'active' To Keep Colors Correct When Hovered Or Clicked */
+}
+
+.luigi1 {
+    text-align: center; /* FOR 'Home of the Original Italian Steak Sandwich' */
+    font-family: "arial";
+    font-size: 14pt; color: #335752;
+}
+
+.luigi2 {
+    text-align: center; /* FOR 'Copyright 2016 Luigi's of Fresno, Inc.' AND BOTTOM SECTION */
+    font-family: "arial";
+    font-size: 11pt; color: #8b0000;
+}
+
+a.button { /* for the 'Where is Luigi's?' button */
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    margin-top: 90px; /* for button height */
+    text-align: center;
+    font-size:17;
+    font-family: "verdana";
+    font-weight: normal;
+    color:#335752;
+    background:#B9DDD6;
+    text-decoration: none;
+    color: initial;
+}
+
+h1 {
+    text-align: center; /* FOR 'luigis_main_logo.gif' */
+    margin-top: 40px; /* for height */
+    margin-bottom: -25px;
+    padding: 0 0 0 0px;
+}
+
+h2 {
+    text-align: center; /* FOR 'Home of the Original Italian Steak Sandwich' */
+    font-weight: bold;
+    margin-top: 40px; /* for height */
+    margin-bottom: -25px;
+    padding: 0 0 0 0px;
+}
+
+h3 {
+    text-align: center; /* FOR 'Copyright 2016 Luigi's of Fresno, Inc.' AND BOTTOM SECTION */
+    font-weight: normal;
+    margin-top: 75px; /* for height */
+    margin-bottom: -25px;
+    padding: 0 0 0 0px;
+}
+
+/* FOR FADE ON 'Home of the Original Italian Steak Sandwich' */
+p {
+    font-size: 18px;
+    animation: change 4s infinite;
+}
+
+@keyframes change {
+    from { color: #3d0000 }
+    to   { color: #ff4747 }
+}
+
+/* FOR MENU MOUSEOVER */
+.luigis-menu {
+    display: block;
+    margin-bottom: 10px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    width: 152px;
+    height: 152px;
+    background-image: url('../img/luigis_menu_off.gif');
+    position: absolute;
+    top: 30px;  /* pushes menu-lady down 30 pixels */
+    /* bottom: 25px; [height differs on windows xp and 10] */
+    left: -50px; /* pushes menu-lady -50 pixels from the left */
+}
+
+.luigis-menu:hover {
+    background: url('../img/luigis_menu_on.gif') no-repeat;
+    /*background-image: url('luigis_menu_on.gif');*/
+}
+.luigis-menu:after {
+    content: url('../img/luigis_menu_on.gif');
+    display: none;
+}
+
+/* FOR HISTORY MOUSEOVER */
+.history {
+    display: block;
+    margin-bottom: 10px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    width: 222px;
+    height: 47px;
+    background-image: url('../img/luigis_history_blink.gif');
+    position: absolute;
+    top: 90px;  /* pushes history down 545 pixels */
+    /* bottom: 25px; [height differs on windows xp and 10] */
+    right: -50px; /* pushes history 35 pixels from the left */
+}
+
+.history:hover {
+    background: url('../img/luigis_history_on.gif') no-repeat;
+    /*background-image: url('luigis_history_on.gif');*/
+}
+.history:after {
+    content: url('../img/luigis_history_on.gif');
+    display: none;
+}
+
+/* CAROUSEL SECTION (STAR TREK)*/
+/*h1 {
+  text-align: center;
+  position: relative;
+}*/
+
+/* CAROUSEL SECTION */
+/*.carousel, .item {
+  height: 300px;
+}
+
+.item {
+  background-size: contain;
+  /*background-size: cover;*/
+  /*background-position: center;
+}
+
+#wood-background {
+  background-image: url('../img/wood-2.jpg');
+}
+
+#restaurant-background {
+  background-image: url('../img/restaurant-2.jpg');
+}
+
+#farm-background {
+  background-image: url('../img/farm-2.jpg');
+}
+
+#restaurante-logo-hero {  /* Centers Restaurant Logo */
+  /*height: 170px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
